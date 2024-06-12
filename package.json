@@ -1,0 +1,13 @@
+{
+  "name": "dialog-esms-api",
+  "version": "1.0.0",
+  "description": "Dialog ESMS service API using javascript.",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Eshan Chathuranga",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
