@@ -20,22 +20,26 @@ This library will handle single bulk SMS send feature with Dialog ESMS service.
 **Configuration**
 
 ```javascript
+//
 //Import esms api module
 const apiConfig = require('@eshanchathuranga/esms-api');
 // set configuration
   async function config() {
         await apiConfig(username, password)
 }
+//
 ```
 
 **Send SMS**
 
 ```javascript
-await createCampaign(campaignName, mask, numbers, message)
+//
 // campaignName -- {string}
 // mask -- {string}
 // numbers -- {array}
 // Message -- {string}
+await createCampaign(campaignName, mask, numbers, message)
+//
 ```
 
 ## Licence
