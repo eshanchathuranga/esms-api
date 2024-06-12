@@ -1,4 +1,4 @@
-# dialog-esms-api
+# esms-api
 
 ![](https://img.shields.io/badge/Release-1.0.1-green)
 
