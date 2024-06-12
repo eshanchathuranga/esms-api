@@ -6,7 +6,7 @@
 
 This library will handle single bulk SMS send feature with Dialog ESMS service.
 
-`npm install dialog-sms-service `
+`npm install @eshanchathuranga/esms-api `
 
 ## How to work
 
