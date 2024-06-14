@@ -1,6 +1,6 @@
 {
   "name": "@eshanchathuranga/esms-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Dialog ESMS API.",
   "main": "text.js",
   "scripts": {
