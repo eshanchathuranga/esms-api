@@ -1,0 +1,27 @@
+{
+  "name": "@eshanchathuranga/esms-api",
+  "version": "1.0.0",
+  "description": "Dialog ESMS API.",
+  "main": "text.js",
+  "scripts": {
+    "test": "node text.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshanchathuranga/esms-api.git"
+  },
+  "keywords": [
+    "Dialog",
+    "ESMS",
+    "API",
+    "Dialog",
+    "Bulk",
+    "SMS"
+  ],
+  "author": "Eshan Chathuranga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eshanchathuranga/esms-api/issues"
+  },
+  "homepage": "https://github.com/eshanchathuranga/esms-api#readme"
+}
