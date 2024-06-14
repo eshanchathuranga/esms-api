@@ -14,7 +14,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org
       - name: publish
-        run: npm publish --access public --otp=769982
+        run: npm publish --access public --otp=340309
         working-directory: package
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
