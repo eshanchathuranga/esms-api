@@ -4,7 +4,7 @@
 
 **JavaScript library to send bulk SMS through Dialog ESMS service**
 
-This library will handle single bulk SMS send feature with Dialog ESMS service.
+This library will handle bulk SMS send feature with Dialog ESMS service.
 
 `npm install @eshanchathuranga/esms-api `
 
@@ -12,7 +12,7 @@ This library will handle single bulk SMS send feature with Dialog ESMS service.
 
 #### First needs to contact Dialog Axiata PLC to get credentials for the SMS gateway.
 
-> **Note:-** Please contact [**Dialog Axiata PLC**](https://esms.dialog.lk/) in order to obtain following fields.
+> **Note:-** Please contact [**Dialog ESMS Service**](https://esms.dialog.lk/) in order to obtain following fields.
  
 
 ## Usage
@@ -21,13 +21,15 @@ This library will handle single bulk SMS send feature with Dialog ESMS service.
 
 ```javascript
 //
-//Import esms api module
+// Import esms api module
 const config = require('@eshanchathuranga/esms-api');
 
 // set configuration
-  const configaration = await config(username, password)
+// username - {string} - 'test'
+// pssword - {string} - 'test@1234'
+const configaration = await config(username, password)
 
-//Get return auth data
+// Get return auth data
 const authData = configaration.then(data => {
                          console.log(data);
 }
@@ -35,20 +37,20 @@ const authData = configaration.then(data => {
 ```
 **Create Campaign**
 ```javascript
-//Import module
+// Import module
 const {config, createCampaign} = require('@eshanchathuranga/esms-api');
 
-/*
-create campaign with numbers
-campaignName={string}
-mask={string}
-numbers={array}
-message={string}
-/*
+
+// Create campaign with numbers
+// campaignName - {string} - 'test01'
+// mask - {string} - 'test'
+// numbers - {array} - ['0770000000', '0720000000', '0750000000', '0700000000', '0740000000', '0780000000']
+// message - {string} - 'Hello there! This is test massege'
+
 
 const createCamp = await createcampaign(campaignName, mask, numbers, message);
 
-//Get return campaign data
+// Get return campaign data
 const campaignData = createCamp.then(data => {
                          return data;
 }
@@ -57,31 +59,30 @@ const campaignData = createCamp.then(data => {
 ```
 **Get campaign List**
 ```javascript
-//Import module
-const {config, getList} = require('@eshanchathurang/esms-api')
+// Import module
+const {config, getList} = require('@eshanchathurang/esms-api');
 
-//Get list
-const list = getList()
-
-list.then(data => {
+// Get list
+const list = getList().then(data => {
+    // List data is here!
     return data;
 }
 ```
 **Send SMS**
 
 ```javascript
-//Import module
-const {config, send} = require('@eshanchathurang/esms-api')
+// Import module
+const {config, send} = require('@eshanchathurang/esms-api');
 
-/*Send SMS for created compaign
- compaignId={string}
- paymentType = value- '0' (To main Wallet)
-               value- '1' (To add bill)
+// Send SMS for created compaign
+// compaignId - {string} - '000000'
+// paymentType - value='0' (To main Wallet) /   value='1' (To add bill)
+               
 /*
 
 const sendSMS = await send(campaignId, paymentType);
 
-//Get sending status
+// Get sending status
 const status = sendSMS.then(status => {
       return status;
 }
@@ -91,12 +92,12 @@ const status = sendSMS.then(status => {
 **Create template**
 ```javascript
 // Import module
-const {config, createTemplate} = require('@eshanchathurang/esms-api')
-/*
-Create a Template
-  templateName {string}
-  message {string}
-/*
+const {config, createTemplate} = require('@eshanchathurang/esms-api');
+
+// Create a Template
+// templateName - {string} - 'test01'
+// message - {string} - 'Hello There!'
+
 const create = createTemplate(templateName, message);
 
 // Get returnning status
@@ -108,20 +109,53 @@ create.then(status => {
 ```
 **Get template list**
 ```javascript
-//Import module
-const {config, listTemplate} = require('@eshanchathurang/esms-api')
+// Import module
+const {config, listTemplate} = require('@eshanchathurang/esms-api');
 
-//get templates
-const templates = listTemplate()
-templates.then(list => {
+// get templates
+const templates = listTemplate().then(list => {
+      // list in here!
       return list;
 }
 
 //
 ```
+**Get template Data**
+```javascript
+// Import module
+const {config, getTemplateData} = require('@eshanchathurang/esms-api');
+
+// Get Data
+const templateData = await getTemplateData(templateId).then(data => {
+      // Template data in here!
+      return data;
+}
+
+//
+```
+**Get report**
+```javascript
+// Import module
+const {config, getReport} = require('@eshanchathurang/esms-api');
+
+// Get report data
+// from - {Date} - 'yyyy-mm-dd' / 'yyyy-mm'
+// to - {date} - 'yyyy-mm-dd' / 'yyyy-mm'
+// option - {option} - 'daily' / 'monthly'
+const reportData = await getReport(from, to, option).then(data => {
+           // Report data in here!
+           return data;
+}
+
+//
+```
+
+
+
+
 **Error handle**
 ```javascript
-//Use catch promise
+// Use catch promise
 .catch(error) {
    throw error
    return error;
