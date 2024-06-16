@@ -22,7 +22,7 @@ This library will handle bulk SMS send feature with Dialog ESMS service.
 ```javascript
 //
 // Import esms api module
-const config = require('@eshanchathuranga/esms-api');
+const config = require('@eshanchathuranga/esms-api/index');
 
 // set configuration
 // username - {string} - 'test'
@@ -38,7 +38,7 @@ const authData = configaration.then(data => {
 **Create Campaign**
 ```javascript
 // Import module
-const {config, createCampaign} = require('@eshanchathuranga/esms-api');
+const {config, createCampaign} = require('@eshanchathuranga/esms-api/index');
 
 
 // Create campaign with numbers
@@ -60,7 +60,7 @@ const campaignData = createCamp.then(data => {
 **Get campaign List**
 ```javascript
 // Import module
-const {config, getList} = require('@eshanchathurang/esms-api');
+const {config, getList} = require('@eshanchathurang/esms-api/index');
 
 // Get list
 const list = getList().then(data => {
@@ -72,7 +72,7 @@ const list = getList().then(data => {
 
 ```javascript
 // Import module
-const {config, send} = require('@eshanchathurang/esms-api');
+const {config, send} = require('@eshanchathurang/esms-api/index');
 
 // Send SMS for created compaign
 // compaignId - {string} - '000000'
@@ -92,7 +92,7 @@ const status = sendSMS.then(status => {
 **Create template**
 ```javascript
 // Import module
-const {config, createTemplate} = require('@eshanchathurang/esms-api');
+const {config, createTemplate} = require('@eshanchathurang/esms-api/index');
 
 // Create a Template
 // templateName - {string} - 'test01'
@@ -110,7 +110,7 @@ create.then(status => {
 **Get template list**
 ```javascript
 // Import module
-const {config, listTemplate} = require('@eshanchathurang/esms-api');
+const {config, listTemplate} = require('@eshanchathurang/esms-api/index');
 
 // get templates
 const templates = listTemplate().then(list => {
@@ -123,7 +123,7 @@ const templates = listTemplate().then(list => {
 **Get template Data**
 ```javascript
 // Import module
-const {config, getTemplateData} = require('@eshanchathurang/esms-api');
+const {config, getTemplateData} = require('@eshanchathurang/esms-api/index');
 
 // Get Data
 const templateData = await getTemplateData(templateId).then(data => {
@@ -136,7 +136,7 @@ const templateData = await getTemplateData(templateId).then(data => {
 **Get report**
 ```javascript
 // Import module
-const {config, getReport} = require('@eshanchathurang/esms-api');
+const {config, getReport} = require('@eshanchathurang/esms-api/index');
 
 // Get report data
 // from - {Date} - 'yyyy-mm-dd' / 'yyyy-mm'
