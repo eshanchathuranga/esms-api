@@ -414,8 +414,6 @@ async function getReport (fromDate, toDate, option) {
         });
     }    
 }
-
-
 module.exports = {
     config,
     charge,
@@ -426,5 +424,4 @@ module.exports = {
     createTemplate,
     getTemplateData,
     getReport
-
 }
