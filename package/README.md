@@ -1,6 +1,6 @@
 # esms-api
 
-![](https://img.shields.io/badge/Release-1.0.1-green)
+![](https://img.shields.io/badge/Release-1.0.7-green)
 
 **JavaScript library to send bulk SMS through Dialog ESMS service**
 
