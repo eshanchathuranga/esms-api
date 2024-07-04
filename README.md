@@ -1,5 +1,5 @@
 # esms-api
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F7VHf8G1ktx3mO8RPRpvdaz%2FOcticons---GitHub's-icon-set-(Community)%3Fm%3Ddev%26node-id%3D1-876" allowfullscreen></iframe>
+
 ![](https://img.shields.io/badge/Release-1.0.7-green)
 
 **JavaScript library to send bulk SMS through Dialog ESMS service**
