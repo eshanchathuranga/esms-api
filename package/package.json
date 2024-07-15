@@ -1,6 +1,6 @@
 {
   "name": "@eshanchathuranga/esms-api",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Dialog ESMS API.",
   "main": "text.js",
   "scripts": {
@@ -11,8 +11,7 @@
     "url": "git+https://github.com/eshanchathuranga/esms-api.git"
   },
   "keywords": [
-    "Dialog",
-    "ESMS",
+    "Dialog_ESMS",
     "API",
     "Dialog",
     "Bulk",

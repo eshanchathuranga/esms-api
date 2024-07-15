@@ -54,7 +54,7 @@ async function config (username, password) {
 /**
  * Function to set create a account charging variables.
  * @param {string} amount The string
- *  @param {string} paymentType The string
+ * @param {string} paymentType The string
  */
 async function charge (amount, paymentType) {
     const charge = await fetch("https://esms.dialog.lk/api/v1/charge", {
