@@ -1,6 +1,6 @@
 {
   "name": "@eshanchathuranga/esms-api",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "Dialog ESMS API.",
   "main": "text.js",
   "scripts": {
@@ -12,10 +12,9 @@
   },
   "keywords": [
     "Dialog_ESMS",
-    "API",
-    "Dialog",
-    "Bulk",
-    "SMS"
+    "SMS_API",
+    "Dialog_ESMS",
+    "Bulk_SMS",
   ],
   "author": "Eshan Chathuranga",
   "license": "MIT",
